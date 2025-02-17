@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moore Apps - Where Innovation Meets Efficiency</title>
+    <style>
+        :root {
+            --purple-300: #9400D3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/mnt/data/A_futuristic_circuit_board_background_with_glowing.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #4CA1AF;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .contact-form:focus-within {
+            box-shadow: 0 0 1em 0.5em var(--purple-300);
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input:focus, textarea:focus {
+            border-color: var(--purple-300);
+            box-shadow: 0 0 10px var(--purple-300);
+            outline: none;
+        }
+        button {
+            position: relative;
+            z-index: 1;
+            background: #4CA1AF;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            background: #3a8891;
+            transform: scale(1.05);
+        }
+        button:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            border-radius: inherit;
+            opacity: 0.6;
+            box-shadow: 0 0 1em 0.5em var(--purple-300);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Moore Apps</h1>
+        <h2>Where Innovation Meets Efficiency</h2>
+        <p>We specialize in building high-quality, custom mobile applications to bring your vision to life.</p>
+        <p>Have an idea? Let's turn it into reality. Contact us to receive our application form and a custom proposal tailored to your needs.</p>
+        
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
